@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  margin: 20;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #121213;
+}
+
+#modal-rules {
+  visibility: visible;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+}
+
+.modal-rules-content {
+  color: #aaa;
+  background-color: #121213;
+  margin: 30% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 95%;
+}
+
+.howToPlay-H1 {
+  color: wheat;
+  font-weight: bold;
+  margin: 20px;
+  text-align: center;
+}
+
+.H3-instructions {
+  padding: 15px;
+  color: #ccc;
+  text-align: center;
+}
+
+.instruction-list {
+  padding: 10px;
+  text-align: center;
+}
+
+#list {
+  line-height: 2;
+  text-align: center;
+}
+
+#list-colors {
+  padding-top: 10px;
+  text-align: center;
+}
+
+#bullet-colors {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  line-height: 1.8;
+  text-align: center;
+  padding-left: 5%;
+}
+
+img {
+  padding-right: 15px;
+}
+
+.close-rules {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-rules:hover,
+.close-rules:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  height: auto;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game {
+  width: 100%;
+  max-width: 550px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: antiquewhite;
+  margin-top: 5px;
+  padding-bottom: 50px;
+}
+
+.board-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+#board {
+  display: grid;
+  grid-gap: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.square {
+  border: 2px solid wheat;
+  min-width: 60px;
+  min-height: 60px;
+  font-size: 50px;
+  font-weight: bold;
+  color: wheat;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#keyboard-container {
+  height: 200px;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto 8px;
+  touch-action: manipulation;
+}
+
+.keyboard-row button {
+  font-weight: bold;
+  border: 0;
+  padding: 0;
+  height: 50px;
+  cursor: pointer;
+  background-color: rgb(129, 131, 132);
+  color: rgb(215, 218, 220);
+  flex-grow: 1;
+  text-transform: uppercase;
+  margin: 2px;
+  border-radius: 4px;
+}
+
+.keyboard-row button.wide-button {
+  flex-grow: 1.5;
+}
+
+.spacer-half {
+  flex-grow: 0.5;
+}
+
+#popup {
+  visibility: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  z-index: 5;
+}
+
+#popup-content {
+  font-size: 25px;
+  color: wheat;
+  background-color: #121213;
+  margin: 30% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 95%;
+  text-align: center;
+}
+
+#close-button {
+  margin-top: 20px;
+  background-color: #888;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px;
+}

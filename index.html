@@ -1,0 +1,90 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Overwordle</title>
+    <script src="script.js"></script>
+    <script src="words.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game">
+        <header class="header">
+          <h1 class="title">Overwordle</h1>
+        </header>
+        
+        <div id="modal-rules">
+          <div class="modal-rules-content">
+            <span class="close-rules">&times;</span>
+            <h1 class="howToPlay-H1">How to play?</h1>
+            <h3 class="H3-instructions">Guess the Overwatch hero in 6 tries.</h2>
+            <section class="instruction-list">
+                <span id="list">Each guess must be an existing Overwatch hero.</span><br>
+                <span id="list">The color of the tiles will change to show how close your guess was:</span>
+                  <ul id="list-colors">
+                    <span id="bullet-colors"><img src="good-guess.jpg" alt="Green letter"> This letter is in the word and in the correct spot.</span><br>
+                    <span id="bullet-colors"><img src="almost-good.jpg" alt="Yellow letter"> This letter is in the word but in the wrong spot.</span><br>
+                    <span id="bullet-colors"><img src="bad-guess.jpg" alt="Grey letter"> This letter is not in the word in any spot. </span><br>
+                  </ul>
+                </span>
+            </section>
+            <h3 class="H3-instructions">Good luck and have fun!</h2>
+          </div>
+        </div>
+
+        <div id="popup">
+          <div id="popup-content">
+            <p id="popup-text">Popup trial</p>
+            <button id="close-button">Close</button>
+          </div>
+        </div>
+
+        <div class="board-container">
+          <div id="board"></div>
+        </div>
+        
+        <div id="keyboard-container">
+          <div class="keyboard-row">
+            <button data-key="q">q</button>
+            <button data-key="w">w</button>
+            <button data-key="e">e</button>
+            <button data-key="r">r</button>
+            <button data-key="t">t</button>
+            <button data-key="y">y</button>
+            <button data-key="u">u</button>
+            <button data-key="i">i</button>
+            <button data-key="o">o</button>
+            <button data-key="p">p</button>
+          </div>
+          <div class="keyboard-row">
+            <div class="spacer-half"></div>
+            <button data-key="a">a</button>
+            <button data-key="s">s</button>
+            <button data-key="d">d</button>
+            <button data-key="f">f</button>
+            <button data-key="g">g</button>
+            <button data-key="h">h</button>
+            <button data-key="j">j</button>
+            <button data-key="k">k</button>
+            <button data-key="l">l</button>
+            <div class="spacer-half"></div>
+          </div>
+          <div class="keyboard-row">
+            <button data-key="enter" class="wide-button">Enter</button>
+            <button data-key="z">z</button>
+            <button data-key="x">x</button>
+            <button data-key="c">c</button>
+            <button data-key="v">v</button>
+            <button data-key="b">b</button>
+            <button data-key="n">n</button>
+            <button data-key="m">m</button>
+            <button data-key="del" class="wide-button">Del</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
