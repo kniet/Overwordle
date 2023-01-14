@@ -96,6 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (guessedWords.length === 6) {
       showLostPopup();
+      stop();
     }
     // we are adding new array to start new row
     if (currentWordArray.length === word.length) {
@@ -179,7 +180,6 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   }
 
-  //to do 29 if's for keyboard input
   document.addEventListener("keydown", function (event) {
     if (isGuessed) {
       return;
