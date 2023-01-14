@@ -184,7 +184,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (isGuessed) {
       return;
     }
-    console.log(event.key);
     if(event.key == "q") {  
     updateWords(event.key);
     }
