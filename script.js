@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function showGGPopup() {
-    document.getElementById("popup-text").innerHTML = "Congratulations! You found the champion!";
+    document.getElementById("popup-text").innerHTML = "Congratulations! You found the hero!";
     document.getElementById("popup").style.visibility = "visible";
   }
 
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function showNotFoundPopup() {
-    document.getElementById("popup-text").innerHTML = "Champion not found!";
+    document.getElementById("popup-text").innerHTML = "Hero not found!";
     document.getElementById("popup").style.visibility = "visible";
   }
 
